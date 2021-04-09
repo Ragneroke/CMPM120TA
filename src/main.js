@@ -13,7 +13,7 @@ let config = {
     parent: 'myGame',
     type: Phaser.CANVAS,
     height: 640,
-    width: 960,
+    width: 800,
     physics: {
         default: 'arcade',
         arcade: {
@@ -27,6 +27,8 @@ let config = {
     scene: [Menu, Play],
 }
 let game = new Phaser.Game(config);
+let borderUISize = game.config.height / 15;
+let borderPadding = borderUISize / 3;
 
 // uncomment the following line if you need to purge local storage data
 //localStorage.clear();

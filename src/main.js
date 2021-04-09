@@ -29,6 +29,9 @@ let config = {
 let game = new Phaser.Game(config);
 let borderUISize = game.config.height / 15;
 let borderPadding = borderUISize / 3;
-
+let keyRight;
+let keyLeft;
+let keyF;
+let keyR;
 // uncomment the following line if you need to purge local storage data
 //localStorage.clear();
